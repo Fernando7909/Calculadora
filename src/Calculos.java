@@ -109,7 +109,7 @@ public class Calculos implements ActionListener {
             default:
                 // Manejar la entrada de números y otros caracteres
                 String textoActual = interfaz.cajaTexto1.getText();
-                if (textoActual.length() < 17) {
+                if (textoActual.length() < 16) {
                     interfaz.cajaTexto1.setText(textoActual + comando);
                 }
                 break;

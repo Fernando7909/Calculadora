@@ -9,7 +9,7 @@ public class Interfaz extends JFrame {
     public JTextField cajaTexto1;
 
     public Interfaz() {
-        setSize(500, 650);
+        setSize(510, 650);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Calculadora");
         setLocationRelativeTo(null);
@@ -39,7 +39,7 @@ public class Interfaz extends JFrame {
                 {"0", ".", "=", "+"}
         };
 
-        int[] posicionesX = {0, 125, 250, 375};
+        int[] posicionesX = {-5, 120, 245, 370};
         int altoBoton = 100;
         int anchoBoton = 125;
         int y = 120;
@@ -138,7 +138,7 @@ public class Interfaz extends JFrame {
 
     private void colocarPantalla() {
         cajaTexto1 = new JTextField();
-        cajaTexto1.setBounds(0, 0, 487, 122);
+        cajaTexto1.setBounds(0, 0, 500, 120);
         cajaTexto1.setHorizontalAlignment(JTextField.RIGHT);
         cajaTexto1.setFont(new Font("Calculator", Font.PLAIN, 70));
         cajaTexto1.setBackground(new Color(0x1E1E1E)); // Color gris oscuro
